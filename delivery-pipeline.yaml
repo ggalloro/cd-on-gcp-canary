@@ -19,9 +19,6 @@ metadata:
 description: delivery pipeline for CD on GCP demo with Skaffold profiles
 serialPipeline:
   stages:
-  - targetId: qa
-    profiles:
-    - qa
   - targetId: prod
     profiles:
     - prod
@@ -44,12 +41,5 @@ metadata:
 description: Prod Cluster (GCP)
 requireApproval: true
 gke:
-  cluster: projects/yourproject/locations/yourlocation/clusters/prodcluster
----
-apiVersion: deploy.cloud.google.com/v1
-kind: Target
-metadata:
-  name: qa
-description: QA Cluster (GCP)
-gke:
-  cluster: projects/yourproject/locations/yourlocation/clusters/qacluster
+  cluster: projects/galloro-demos/locations/europe-west1/clusters/asm-test
+
