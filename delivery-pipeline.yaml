@@ -40,5 +40,5 @@ metadata:
   name: prod
 description: Prod Cluster (GCP)
 gke:
-  cluster: projects/galloro-demos/locations/europe-west1/clusters/asm-test
+  cluster: projects/yourproject/locations/yourlocation/clusters/prodcluster
 
