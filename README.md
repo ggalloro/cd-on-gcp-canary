@@ -14,11 +14,12 @@ kubectl get crd gateways.gateway.networking.k8s.io &> /dev/null || \
 ```
 gcloud deploy apply --file=delivery-pipeline.yaml --region=yourregion --project=yourproject
 ```
-7. Build your image and create 1st release with [createrelease.sh](createrelease.sh)
-8. Advance first-release to stable from GCP Console
+6. Build your image and create 1st release with [createrelease.sh](createrelease.sh)
+7. Advance first-release to stable from GCP Console
+8. Change the text in line 25 of [app.go](cdongcp-app/app.go) file
 9. Create your canary release (replace `yourregion` with the region you created your delivery pipeline into):
 ```
 gcloud deploy releases create canary-release --delivery-pipeline cd-on-gcp-pipeline --region yourregion --build-artifacts artifacts.json
 ```
-9. Get your gateway IP and open a browser to it or do a `"while true;do curl x.x.x.x;done"`
-10. Advance canary-release to stable from GCP Console
+10. Get your gateway IP and open a browser to it or do a `"while true;do curl x.x.x.x;done"`
+11. Advance canary-release to stable from GCP Console
