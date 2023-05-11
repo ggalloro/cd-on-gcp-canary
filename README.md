@@ -2,7 +2,7 @@
 
 ## Simple Manual Tutorial
 
-1. Create a GKE Cluster with Anthos Service Mesh enabled and and Artifact Registry Docker repo
+1. Create a [GKE Cluster with Anthos Service Mesh enabled](https://cloud.google.com/service-mesh/docs/managed/install-anthos-service-mesh-console) and and Artifact Registry Docker repo
 2. Apply K8s Gateway API CRDs:
 ```
 kubectl get crd gateways.gateway.networking.k8s.io &> /dev/null || \
