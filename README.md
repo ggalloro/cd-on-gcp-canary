@@ -1,4 +1,4 @@
-# Continuous Delivery on GCP with Cloud Deploy Canary Deployment - K8s Gateway API and Anthos Service Mesh
+# Continuous Delivery on GCP with Cloud Deploy Canary Deployment - K8s Gateway APIs and Anthos Service Mesh
 
 ## Simple Manual Tutorial
 
