@@ -21,5 +21,5 @@ gcloud deploy apply --file=delivery-pipeline.yaml --region=yourregion --project=
 ```
 gcloud deploy releases create canary-release --delivery-pipeline cd-on-gcp-pipeline --region yourregion --build-artifacts artifacts.json
 ```
-10. Get your gateway IP and open a browser to it or do a `"while true;do curl x.x.x.x;done"`
-11. Advance canary-release to stable from GCP Console
+10. Get your gateway IP and open a browser to it or do a `"while true;do curl x.x.x.x;done"`, you should see responses both from the old and new (canary) version
+11. Advance canary-release to stable from GCP Console, the curl command above should show only responses from the new version
