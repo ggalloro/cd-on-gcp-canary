@@ -16,7 +16,7 @@ gcloud deploy apply --file=delivery-pipeline.yaml --region=yourregion --project=
 ```
 6. Build your image and create 1st release with [createrelease.sh](createrelease.sh)
 7. Advance first-release to stable from GCP Console
-8. Change the text in line 25 of [app.go](cdongcp-app/app.go) file
+8. Change the text in line 25 of [app.go](cdongcp-app/app.go) file to “`cd-on-gcp app updated in target: …`”
 9. Rebuild the container image with your new code (replace `yourrepo` with your Artifact Registry repo):
 ```
 skaffold build --default-repo=yourrepo --file-output=artifacts.json
